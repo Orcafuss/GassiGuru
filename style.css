@@ -5,7 +5,6 @@ html, body {
   overflow-y: auto;
   overflow: hidden;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -16,10 +15,16 @@ html, body {
     transform: translateY(0px);
   }
 }
-
 .navigation {
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
+  background: #E76F51;
+}
+.button {
+  border: none;
+  font-family: 'Karla';
+  background: none;
+  color: #ffffff;
 }
