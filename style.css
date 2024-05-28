@@ -21,10 +21,13 @@ html, body {
   bottom: 0;
   width: 100%;
   background: #E76F51;
+  align-items: center;
 }
 .button {
   border: none;
   font-family: 'Karla';
+  font-size: 24px;
   background: none;
   color: #ffffff;
+  text-align: center;
 }
