@@ -33,7 +33,7 @@ html, body {
   color: #f25c54;
   text-decoration: none;
 }
-.button {
+.navigation .button {
   border: none;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -45,7 +45,7 @@ html, body {
   font-size: 1.25rem;
   font-weight: 600;
 }
-.button:hover {
+.navigation .button:hover {
   background: #f25c54;
 }
 
@@ -65,7 +65,7 @@ html, body {
   opacity: 1;
   font-size: 1rem;
 }
-.box {
+.feed .article {
   width: 100%;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
@@ -77,11 +77,11 @@ html, body {
   -moz-box-shadow: 0em 0em 0.375em 0.15em rgba(52,78,65,0.57);
   box-shadow: 0em 0em 0.375em 0.15em rgba(52,78,65,0.57);
 }
-.box h1 {
+.feed .article h1 {
   color: #a3b18a;
   font-size: 1.6rem;
 }
-.box p {
+.feed .article p {
   color: #000000;
   font-size: 1.25rem;
 }
