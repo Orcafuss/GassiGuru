@@ -13,29 +13,28 @@
     <div class="navigation">
       <a href="feed.html">
         <button class="button">
-          <img src="newspaper.svg" style="width:1.875rem;height:1.875rem;filter: invert(1);">
+          <img src="newspaper.svg" style="width:1.875rem;height:1.875rem;filter:invert(1);padding-bottom:0.3rem;">
           <p style="margin:0;padding:0;">Start</p>
         </button>
       </a>
       <a href="map.html">
         <button class="button">
-          <img src="marker.svg" style="width:1.875rem;height:1.875rem;filter: invert(1);">
+          <img src="marker.svg" style="width:1.875rem;height:1.875rem;filter:invert(1);padding-bottom:0.3rem;">
           <p style="margin:0;padding:0;">Suche</p>
         </button>
       </a>
     </div>
     <div class="feed">
-      <ul style="list-style-type:none;">
-        <li>Test 1</li>
-        <li>Test 2</li>
-        <li>Test 3</li>
-      </ul>
+      <div class="box">
+        <h1>Das ist eine Überschrift</h1>
+        <p>Das ist Text</p>
+      </div>
+      <div class="box">
+        <h1>Das ist ebenfalls eine Überschrift</h1>
+        <p>Das ist mehr Text</p>
+      </div>
     </div>
     <script>
-      var ul = document.querySelector("ul");
-      for (var i = ul.children.length; i >= 0; i--) {
-        ul.appendChild(ul.children[Math.random() * i | 0]);
-      }
     </script>
   </body>
 </html>

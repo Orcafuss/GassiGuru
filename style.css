@@ -4,7 +4,7 @@ html, body {
   height: 100vh;
   overflow-y: auto;
   overflow: hidden;
-  background: #f7b267;
+  background: #a3b18a;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -webkit-touch-callout: none;
@@ -15,25 +15,23 @@ html, body {
   user-select: none;
   font-family: Inter;
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
+
+
+
 .navigation {
+  z-index: 100;
   width: 100%;
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  border-top: 0.25rem solid #f37059;
   align-items: center;
   text-align: center;
-  background: #f4845f;
+  background: #f27059;
+  border-top: 0.25rem solid #f79d65;
+}
+.navigation a {
+  color: #f25c54;
+  text-decoration: none;
 }
 .button {
   border: none;
@@ -42,7 +40,7 @@ html, body {
   padding-left: 14%;
   padding-right: 14%;
   background: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 1.25rem;
   font-weight: 600;
@@ -50,9 +48,33 @@ html, body {
 .button:hover {
   background: #f25c54;
 }
+
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .feed {
+  z-index: 99;
   height: 1000px;
   animation: fadeIn 0.5s ease-in;
   opacity: 1;
-  font-size: 16px;
+  font-size: 1rem;
+}
+.box {
+  width: 100%;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(52,78,65,0.57);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(52,78,65,0.57);
+  box-shadow: 0px 0px 5px 2px rgba(52,78,65,0.57);
 }
