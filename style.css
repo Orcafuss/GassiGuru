@@ -37,8 +37,8 @@ html, body {
   border: none;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  padding-left: 14%;
-  padding-right: 14%;
+  padding-left: 8%;
+  padding-right: 8%;
   background: none;
   color: #ffffff;
   text-align: center;
@@ -64,8 +64,8 @@ html, body {
   animation: fadeIn 0.5s ease-in;
   opacity: 1;
   font-size: 1rem;
-}
-.feed .article {
+} 
+.feed .box-white {
   width: 100%;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
@@ -77,11 +77,11 @@ html, body {
   -moz-box-shadow: 0em 0em 0.375em 0.15em rgba(52,78,65,0.57);
   box-shadow: 0em 0em 0.375em 0.15em rgba(52,78,65,0.57);
 }
-.feed .article h1 {
+.feed .box-white h1 {
   color: #a3b18a;
   font-size: 1.6rem;
 }
-.feed .article p {
+.feed .box-white p {
   color: #000000;
   font-size: 1.25rem;
 }
