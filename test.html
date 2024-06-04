@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>GassiGuru</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="pages">
+      
+        <div class="page one" id="search">
+          <div class="search-container">
+            <input type="text" placeholder="Suche Ort oder PLZ..." class="search-bar">
+            <button>
+              <img src="search.svg" class="search-icon" style="width:2.25rem;">
+            </button>
+          </div>
+        </div>
+        
+        <div class="page two" id="list">
+          <div class="account-container">
+            <button></button> Finn Benkert
+          </div>
+          <hr class="dashed">
+            <div>
+              <button onClick="slide('prev')">Previous</button>
+              <button onClick="slide('next')">Next</button>
+            </div>
+        </div>
+        
+        <div class="page three" id="account">
+          <div>
+            <button onClick="slide('prev')">Previous</button>
+          </div>
+        </div>
+        
+    <div class="navigation" style="z-index:1000">
+      <a href="#search" class="button">1</a>
+      <a href="#list" class="button">2</a>
+      <a href="#account" class="button">3</a>
+    </div>
+        
+      </div>
+    </div>
+    
+    <script>
+      const pages = document.querySelectorAll(".page");
+      const translateAmount = 100; 
+      let translate = 0;
+      slide = (direction) => {
+        direction === "next" ? translate -= translateAmount : translate += translateAmount;
+        pages.forEach(
+          pages => (pages.style.transform = `translateX(${translate}%)`)
+        );
+      }
+    </script>
+  </body>
+</html>
