@@ -3,3 +3,18 @@
 :-moz-placeholder{font-style:italic;}
 ::-moz-placeholder{font-style:italic;}
 ::-ms-input-placeholder{font-style:italic;}
+
+.navigation {
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  bottom: 0;
+  background: #ff4500;
+}
+
+/*
+.search-container {
+
+}
+*/
