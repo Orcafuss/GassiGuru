@@ -5,22 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
   <body>
     <div class="navigation">
-      <a href="home.html">
-        <button>1</button>
-      </a>
-      <a href="list.html">
-        <button>2</button>
-      </a>
-      <a href="user.html">
-        <button>3</button>
+      <a><button><img src="home.svg"></button></a><a href="list.html"><button><img src="list.svg"></button></a><a href="user.html"><button><img src="user.svg"></button></a>
     </div>
     
     <div class="search-container">
-      <input type="text">
+      <input type="text" id="search" name="q" placeholder="Suche Ort oder PLZ..."><button><i class="fa fa-search" style="filter:invert(100%);"></i></button>
     </div>
   </body>
 </html>
