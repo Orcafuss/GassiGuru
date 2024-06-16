@@ -18,7 +18,7 @@
 }
 html, body {
   font-size: 100%;
-  padding-bottom: 4rem;
+  padding-bottom: 6vh;
   background-color: #ffffff;
 }
 a {
@@ -48,6 +48,7 @@ img {
   bottom: 0;
   background: #749c75;
   border-top: 0.25rem solid #9cd08f;
+  height: 12vh;
 }
 .navigation button {
   padding-top: 1.25rem;
@@ -59,7 +60,6 @@ img {
 }
 .navigation img {
   width: 3rem;
-  height: 3rem;
 }
 
 
