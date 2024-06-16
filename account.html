@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>GassiGuru</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body class="pageThree">
+  
+    <div class="container">
+      <!-- HEADER SECTION -->
+      <div class="banner"></div>
+      <div style="justify-content: center; display: flex;">
+        <div class="backdrop"></div>
+        <img src="img/empty.svg">
+      </div>
+      <h1 style="padding-top:1.5rem; animation: fadeInOne 1.5s;">Willkommen,</h1>
+      <h1 style="padding-bottom: 1.5rem; animation: fadeInTwo 1.5s;">Maximilian Langguth.</h1>
+      <hr>
+      <!-- PETS SECTION -->
+      Ihre Haustiere<br>
+      Lolli<br>
+      Rocky<br>
+      Samuel<br>
+      <hr>
+      <!-- SETTINGS SECTION -->
+      <button class="collapsible">Persönliche Einstellungen</button>
+      <div class="content">
+        <button>Passwort ändern</button>
+        <p>Zahlungsmethoden bearbeiten</p>
+        <button style="color: red;">Account deaktivieren</button>
+      </div>
+    </div>
+    <!-- NAVIGATION BAR -->
+    <div class="navigation">
+      <a href="home.html"><button><img src="img/home.svg"></button></a><a href="list.html"><button><img src="img/list.svg"></button></a><a><button><img src="img/user.svg"></button></a>
+    </div>
+    
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+    </script>
+  </body>
+</html>

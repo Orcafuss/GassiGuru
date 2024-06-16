@@ -8,13 +8,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
   </head>
-  <body>
-    <div class="navigation">
-      <a><button><img src="home.svg"></button></a><a href="list.html"><button><img src="list.svg"></button></a><a href="user.html"><button><img src="user.svg"></button></a>
-    </div>
-    
+  <body class="pageOne">
+
+    <!-- TOP SEARCH BAR -->
     <div class="search-container">
-      <input type="text" id="search" name="q" placeholder="Suche Ort oder PLZ..."><button><i class="fa fa-search" style="filter:invert(100%);"></i></button>
+      <form action="home.html">
+        <input type="text" id="search" name="query" placeholder="Suche Ort oder PLZ..."><button type="submit"><i class="fa fa-search"></i></button>
+      </form>
     </div>
+    <!-- MAP -->
+    <img src="img/germany.svg" style="width: 300%;">
+    <!-- NAVIGATION BAR -->
+    <div class="navigation">
+      <a><button><img src="img/home.svg"></button></a><a href="list.html"><button><img src="img/list.svg"></button></a><a href="account.html"><button><img src="img/user.svg"></button></a>
+    </div>
+
+    <script>
+      let _startX = 0,
+        _startY = 0,
+        _scrollTop = 0,
+        _scrollLeft = 0;
+      document.onmousedown = OnMouseDown;
+      document.onmouseup = OnMouseUp;
+
+      function OnMouseDown(event) {
+        document.onmousemove = OnMouseMove;
+        _startX = event.clientX;
+        _startY = event.clientY;
+        _scrollTop = document.documentElement.scrollTop;
+        _scrollLeft = document.documentElement.scrollLeft;
+      }
+
+      function OnMouseMove(event) {
+        window.scrollTo({
+          left: _scrollLeft + (_startX - event.clientX),
+          top: _scrollTop + (_startY - event.clientY)
+        });
+      }
+
+      function OnMouseUp() {
+        document.onmousemove = null;
+      }
+    </script>
   </body>
 </html>
