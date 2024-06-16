@@ -26,7 +26,7 @@ a {
 }
 button {
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   border: none;
   background: none;
 }
@@ -112,7 +112,7 @@ img {
   100%  { opacity: 1; }
 }
 .pageThree .container {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 .pageThree .container .banner {
   width: 100%;
@@ -143,7 +143,7 @@ img {
 .pageThree .container h1 {
   font-weight: bold;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 
@@ -215,7 +215,7 @@ img {
   position: relative;
 }
 .logo {
-  font-size: 10%;
+  font-size: 3rem;
   color: white;
   top: 50%;
   left: 50%;
@@ -234,6 +234,14 @@ img {
 
 
 
+
+
+
+
+
+
+
+
 .account-bar {
   font-size: 2rem;
   padding-top: 1rem;
@@ -247,4 +255,20 @@ img {
   height: 2.5rem;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.payment-option {
+  border: 3px solid #000000;
+  height: 5rem;
+  width: 7rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
 }
