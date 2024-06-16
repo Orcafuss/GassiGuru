@@ -117,7 +117,7 @@ img {
 .pageThree .container .banner {
   width: 100%;
   background: #565f70;
-  height: 11rem;
+  height: 9rem;
   position: absolute;
   z-index: 9;
 }
@@ -125,7 +125,7 @@ img {
   width: 14rem;
   height: 14rem;
   background: #565f70;
-  margin-top: 4rem;
+  margin-top: 2rem;
   border-radius: 7rem;
   z-index: 12;
   -webkit-box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.75);
@@ -135,7 +135,7 @@ img {
 .pageThree .container img {
   width: 17rem;
   height: 17rem;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
   border-radius: 7rem;
   z-index: 12;
   position: absolute;
