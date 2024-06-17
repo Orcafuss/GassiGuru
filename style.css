@@ -178,13 +178,16 @@ span {
 .pet-list {
 }
 .pet-list p, .pet-list button {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   width: 100%;
   text-align: left;
 }
 .collapsible {
-  cursor: pointer;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   width: 100%;
   border: none;
   text-align: left;
@@ -199,7 +202,9 @@ span {
   transition: max-height 0.3s ease-out;
 }
 .content p, .content button {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   width: 100%;
   text-align: left;
 }
@@ -212,7 +217,8 @@ span {
 .footer {
   background: #565f70;
   text-align: center;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .footer p {
   padding-bottom: 0.5rem;
