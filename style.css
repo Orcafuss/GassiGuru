@@ -18,7 +18,6 @@
 }
 html, body {
   font-size: 100%;
-  padding-bottom: 6vh;
   background-color: #ffffff;
 }
 a {
@@ -32,6 +31,37 @@ button {
 }
 img {
   pointer-events: none;
+}
+@keyframes fadeInOne {
+  0%    { opacity: 0; }
+  25%   { opacity: 0; }
+  62.5% { opacity: 1; }
+}
+@keyframes fadeInTwo {
+  0%    { opacity: 0; }
+  62.5% { opacity: 0; }
+  100%  { opacity: 1; }
+}
+
+
+
+/* SPLASHSCREEN */
+.splashscreen {
+  background: #749c75;
+  height: 100vh;
+  position: relative;
+}
+.logo {
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+span {
+  color: #ffffff;
+  font-weight: 900;
 }
 
 
@@ -48,7 +78,7 @@ img {
   bottom: 0;
   background: #749c75;
   border-top: 0.25rem solid #9cd08f;
-  height: 12vh;
+  height: 14vh;
 }
 .navigation button {
   padding-top: 1.25rem;
@@ -96,21 +126,21 @@ img {
 
 /* PAGE TWO STYLES */
 .pageTwo {
+  font-size: 1.25rem;
 }
-
+.pageTwo .container button {
+  padding: 1rem;
+}
+.pageTwo .container img {
+  width: 1rem;
+  background: red;
+  height: 1rem;
+  border-radius: 0.5rem;
+  
+}
 
 
 /* PAGE THREE STYLES */
-@keyframes fadeInOne {
-  0%    { opacity: 0; }
-  25%   { opacity: 0; }
-  62.5% { opacity: 1; }
-}
-@keyframes fadeInTwo {
-  0%    { opacity: 0; }
-  62.5% { opacity: 0; }
-  100%  { opacity: 1; }
-}
 .pageThree .container {
   font-size: 1.25rem;
 }
@@ -132,7 +162,7 @@ img {
   -moz-box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.75);
   box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.75);
 }
-.pageThree .container img {
+.pageThree .container .icon {
   width: 17rem;
   height: 17rem;
   margin-top: 0.5rem;
@@ -141,13 +171,17 @@ img {
   position: absolute;
 }
 .pageThree .container h1 {
-  font-weight: bold;
+  font-weight: 900;
   text-align: center;
   font-size: 2rem;
 }
-
-
-
+.pet-list {
+}
+.pet-list p, .pet-list button {
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+}
 .collapsible {
   cursor: pointer;
   padding: 1rem;
@@ -156,11 +190,9 @@ img {
   text-align: left;
   outline: none;
 }
-
 .active, .collapsible:hover {
   background-color: #f1f1f1;
 }
-
 .content {
   max-height: 0;
   overflow: hidden;
@@ -171,6 +203,30 @@ img {
   width: 100%;
   text-align: left;
 }
+.content img {
+  width: 5rem;
+  height: 3rem;
+  border: 0.25rem solid #dee1e6;
+  border-radius: 0.5rem;
+}
+.footer {
+  background: #565f70;
+  text-align: center;
+  padding: 1rem;
+}
+.footer p {
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #dee1e6;
+}
+.footer button {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.footer button:hover {
+  background: #888F9A;
+  opacity: 1;
+}
 
 
 
@@ -179,96 +235,4 @@ img {
 }
 .pageUser .return {
   background: none;
-}
-
-
-
-
-
-
-
-
-
-
-@keyframes gassi {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes guru {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.splashscreen {
-  background-color: #ff4500;
-  height: 100vh;
-  position: relative;
-}
-.logo {
-  font-size: 3rem;
-  color: white;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.logo .gassi {
-  animation-name: gassi;
-  animation-duration: 1s;
-}
-.logo .guru {
-  animation-name: guru;
-  animation-duration: 1.5s;
-}
-
-
-
-
-
-
-
-
-
-
-
-.account-bar {
-  font-size: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #898980;
-}
-.account-bar button {
-  border: none;
-  border-radius: 1.25rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-
-
-
-
-
-
-
-
-.payment-option {
-  border: 3px solid #000000;
-  height: 5rem;
-  width: 7rem;
-  border-radius: 1rem;
-  padding: 0.5rem;
 }

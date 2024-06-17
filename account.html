@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" style="padding-bottom: 14vh;">
   <head>
     <title>GassiGuru</title>
     <meta charset="UTF-8">
@@ -14,24 +14,34 @@
       <div class="banner"></div>
       <div style="justify-content: center; display: flex;">
         <div class="backdrop"></div>
-        <img src="img/empty.svg">
+        <img class="icon" src="img/empty.svg">
       </div>
       <h1 style="padding-top:1.5rem; animation: fadeInOne 1.5s;">Willkommen,</h1>
       <h1 style="padding-bottom: 1.5rem; animation: fadeInTwo 1.5s;">Maximilian Langguth.</h1>
       <hr>
       <!-- PETS SECTION -->
-      Ihre Haustiere<br>
-      Lolli<br>
-      Rocky<br>
-      Samuel<br>
+      <div class="pet-list">
+      <p>Deine Haustiere</p>
+      <p>Nora</p>
+      <button>Haustier hinzufügen</button>
+      </div>
       <hr>
       <!-- SETTINGS SECTION -->
-      <button class="collapsible">Persönliche Einstellungen</button>
+      <button class="collapsible"><img src="img/settings.svg" style="height: 1rem;padding-right:0.25rem;">Persönliche Einstellungen</button>
       <div class="content">
         <button>Passwort ändern</button>
         <p>Zahlungsmethoden bearbeiten</p>
+        <img src="img/payment/mastercard.svg" style="margin-left: 1rem;"> <img src="img/payment/paypal.svg">
         <button style="color: red;">Account deaktivieren</button>
       </div>
+      <!-- FOOTER -->
+      <footer class="footer">
+        <p>© 2024 GassiGuru UG. Alle Rechte vorbehalten.</p>
+        <button>Datenschutzrichtlinien</button><br>
+        <button>Rechtliches</button><br>
+        <button>GassiGuru-Nutzungsvertrag</button><br>
+        <button>Erstattungen</button>
+      </footer>
     </div>
     <!-- NAVIGATION BAR -->
     <div class="navigation">

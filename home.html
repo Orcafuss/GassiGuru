@@ -17,38 +17,10 @@
       </form>
     </div>
     <!-- MAP -->
-    <img src="img/germany.svg" style="width: 100%;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3942.830321166451!2d10.153973724303746!3d49.66330546550662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sde!2sde!4v1718651267049!5m2!1sde!2sde" style="border:0;width:100%;height:76vh;margin-top:9.5vh;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <!-- NAVIGATION BAR -->
     <div class="navigation">
       <a><button><img src="img/icon1.svg"></button></a><a href="list.html"><button><img src="img/icon2.svg"></button></a><a href="account.html"><button><img src="img/icon3.svg"></button></a>
     </div>
-
-    <script>
-      let _startX = 0,
-        _startY = 0,
-        _scrollTop = 0,
-        _scrollLeft = 0;
-      document.onmousedown = OnMouseDown;
-      document.onmouseup = OnMouseUp;
-
-      function OnMouseDown(event) {
-        document.onmousemove = OnMouseMove;
-        _startX = event.clientX;
-        _startY = event.clientY;
-        _scrollTop = document.documentElement.scrollTop;
-        _scrollLeft = document.documentElement.scrollLeft;
-      }
-
-      function OnMouseMove(event) {
-        window.scrollTo({
-          left: _scrollLeft + (_startX - event.clientX),
-          top: _scrollTop + (_startY - event.clientY)
-        });
-      }
-
-      function OnMouseUp() {
-        document.onmousemove = null;
-      }
-    </script>
   </body>
 </html>
